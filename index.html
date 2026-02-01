@@ -31,17 +31,15 @@
         height: 100vh;
       }
 
-   .presentation-wrapper {
-  position: relative;
-  width: 1280px;
-  height: 720px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transform-origin: center center;
-}
-
+      .presentation-wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
 
       .slide-container {
         width: 1280px;
@@ -1301,14 +1299,27 @@
           <div class="timeline-container">
             <div class="timeline-track"></div>
             <div class="timeline-track-active"></div>
-            <div class="steps-wrapper">
+            <div
+              class="steps-wrapper"
+              style="grid-template-columns: repeat(5, 1fr)"
+            >
               <div class="step-col">
                 <div class="connector-line"></div>
                 <div class="timeline-node"></div>
                 <div class="timeline-card">
-                  <span class="phase-number">01</span>
+                  <span class="phase-number">Phase 1</span>
                   <i class="fas fa-clipboard-list phase-icon"></i>
                   <p class="phase-title">Project Initialization & Analysis</p>
+                  <p
+                    style="
+                      font-size: 11px;
+                      color: #60a5fa;
+                      margin-top: 8px;
+                      font-family: &quot;Roboto Mono&quot;, monospace;
+                    "
+                  >
+                    2 Weeks
+                  </p>
                 </div>
               </div>
 
@@ -1316,9 +1327,19 @@
                 <div class="connector-line"></div>
                 <div class="timeline-node"></div>
                 <div class="timeline-card">
-                  <span class="phase-number">02</span>
+                  <span class="phase-number">Phase 2</span>
                   <i class="fas fa-book-reader phase-icon"></i>
                   <p class="phase-title">Literature Review</p>
+                  <p
+                    style="
+                      font-size: 11px;
+                      color: #60a5fa;
+                      margin-top: 8px;
+                      font-family: &quot;Roboto Mono&quot;, monospace;
+                    "
+                  >
+                    3 Weeks
+                  </p>
                 </div>
               </div>
 
@@ -1326,9 +1347,19 @@
                 <div class="connector-line"></div>
                 <div class="timeline-node"></div>
                 <div class="timeline-card">
-                  <span class="phase-number">03</span>
+                  <span class="phase-number">Phase 3</span>
                   <i class="fas fa-pencil-ruler phase-icon"></i>
                   <p class="phase-title">System Design</p>
+                  <p
+                    style="
+                      font-size: 11px;
+                      color: #60a5fa;
+                      margin-top: 8px;
+                      font-family: &quot;Roboto Mono&quot;, monospace;
+                    "
+                  >
+                    4 Weeks
+                  </p>
                 </div>
               </div>
 
@@ -1336,9 +1367,19 @@
                 <div class="connector-line"></div>
                 <div class="timeline-node"></div>
                 <div class="timeline-card">
-                  <span class="phase-number">04</span>
-                  <i class="fas fa-code phase-icon"></i>
-                  <p class="phase-title">Development Phase</p>
+                  <span class="phase-number">Phase 4</span>
+                  <i class="fas fa-desktop phase-icon"></i>
+                  <p class="phase-title">Demo Implementation</p>
+                  <p
+                    style="
+                      font-size: 11px;
+                      color: #60a5fa;
+                      margin-top: 8px;
+                      font-family: &quot;Roboto Mono&quot;, monospace;
+                    "
+                  >
+                    4 Weeks
+                  </p>
                 </div>
               </div>
 
@@ -1346,19 +1387,19 @@
                 <div class="connector-line"></div>
                 <div class="timeline-node"></div>
                 <div class="timeline-card">
-                  <span class="phase-number">05</span>
-                  <i class="fas fa-shield-virus phase-icon"></i>
-                  <p class="phase-title">Testing & Verification</p>
-                </div>
-              </div>
-
-              <div class="step-col">
-                <div class="connector-line"></div>
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                  <span class="phase-number">06</span>
+                  <span class="phase-number">Phase 5</span>
                   <i class="fas fa-file-contract phase-icon"></i>
                   <p class="phase-title">Documentation & Release</p>
+                  <p
+                    style="
+                      font-size: 11px;
+                      color: #60a5fa;
+                      margin-top: 8px;
+                      font-family: &quot;Roboto Mono&quot;, monospace;
+                    "
+                  >
+                    2 Weeks
+                  </p>
                 </div>
               </div>
             </div>
@@ -1582,7 +1623,10 @@
               </div>
               <div class="text-content">
                 <h3 class="card-title">System Administrator</h3>
-                <p class="card-desc">Owns the platform and manages applications, and system policies</p>
+                <p class="card-desc">
+                  Owns the platform and manages applications, and system
+                  policies
+                </p>
               </div>
             </div>
 
@@ -1766,50 +1810,68 @@
         </div>
       </div>
 
-      <!-- Slide 14: System Architecture -->
+      <!-- Slide 14: System Design Approach -->
       <div class="slide-container">
         <div class="bg-grid"></div>
+        <div class="accent-glow" style="top: 50%; left: 50%"></div>
 
         <div class="header-bar">
           <div class="section-tag">
-            <i class="fas fa-sitemap"></i>
+            <i class="fas fa-drafting-compass"></i>
             <span>System Design</span>
           </div>
           <div class="logo-text">Secure License Management System</div>
         </div>
 
-        <div class="content-wrapper">
-          <h2>System Architecture</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-laptop-code"></i></div>
-              <div class="list-text">
-                Client Application with embedded License Agent
+        <div
+          class="content-wrapper"
+          style="
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <div style="max-width: 1000px; margin: 0 auto">
+            <div style="margin-bottom: 40px">
+              <div
+                style="
+                  display: inline-block;
+                  background: rgba(59, 130, 246, 0.15);
+                  padding: 20px;
+                  border-radius: 50%;
+                  margin-bottom: 30px;
+                  border: 2px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <i
+                  class="fas fa-sitemap"
+                  style="font-size: 64px; color: #60a5fa"
+                ></i>
               </div>
+              <h2 style="text-align: center; margin-bottom: 25px">
+                System Design Approach
+              </h2>
+              <div
+                class="divider"
+                style="width: 100px; margin: 0 auto 40px"
+              ></div>
             </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-server"></i></div>
-              <div class="list-text">Centralized Licensing Server (API)</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-database"></i></div>
-              <div class="list-text">Secure License Database</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-tachometer-alt"></i></div>
-              <div class="list-text">Admin Dashboard for management</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-lock"></i></div>
-              <div class="list-text">Encrypted communication (HTTPS/TLS)</div>
-            </div>
-          </div>
 
-          <div class="architecture-flow">
-            <div class="flow-title">System Flow</div>
-            <div class="flow-text">
-              Client → Server → Database → Response → Enforcement
-            </div>
+            <p
+              style="
+                font-size: 20px;
+                line-height: 1.9;
+                color: #cbd5e1;
+                text-align: center;
+                max-width: 950px;
+                margin: 0 auto;
+              "
+            >
+              This section presents the overall structure of the licensing
+              system, including the operational workflow, supported licensing
+              modes, core system components, and a live demonstration of the
+              implemented solution.
+            </p>
           </div>
         </div>
 
@@ -1819,50 +1881,54 @@
         </div>
       </div>
 
-      <!-- Slide 15: Logical Design -->
+      <!-- Slide 15: End-to-End Workflow -->
       <div class="slide-container">
         <div class="bg-grid"></div>
 
         <div class="header-bar">
           <div class="section-tag">
-            <i class="fas fa-sitemap"></i>
+            <i class="fas fa-sync-alt"></i>
             <span>System Design</span>
           </div>
           <div class="logo-text">Secure License Management System</div>
         </div>
 
         <div class="content-wrapper">
-          <h2>Logical Design (Workflow)</h2>
-          <div class="content-list">
+          <h2>End-to-End Licensing Workflow</h2>
+          <div class="content-list" style="gap: 14px">
             <div class="list-item">
-              <div class="list-icon"><i class="fas fa-play-circle"></i></div>
-              <div class="list-text">User launches application</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-search"></i></div>
+              <div class="list-icon"><i class="fas fa-download"></i></div>
               <div class="list-text">
-                License Agent checks local encrypted license
+                User installs the application and activates it using a license
+                key or authenticated account
               </div>
             </div>
             <div class="list-item">
-              <div class="list-icon"><i class="fas fa-wifi"></i></div>
-              <div class="list-text">If online → validate with server</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-plug"></i></div>
+              <div class="list-icon"><i class="fas fa-handshake"></i></div>
               <div class="list-text">
-                If offline → validate locally with secure rules
+                Embedded License Agent securely communicates with Licensing
+                Server for verification
               </div>
             </div>
             <div class="list-item">
-              <div class="list-icon"><i class="fas fa-check-double"></i></div>
+              <div class="list-icon"><i class="fas fa-certificate"></i></div>
               <div class="list-text">
-                Server verifies license status and device binding
+                After successful validation, an encrypted license is issued and
+                stored locally on the device
               </div>
             </div>
             <div class="list-item">
-              <div class="list-icon"><i class="fas fa-door-open"></i></div>
-              <div class="list-text">Application allowed or blocked</div>
+              <div class="list-icon"><i class="fas fa-redo"></i></div>
+              <div class="list-text">
+                On each launch, agent revalidates license locally and
+                synchronizes with server when online
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="list-icon"><i class="fas fa-shield-check"></i></div>
+              <div class="list-text">
+                Access is granted only when all security policies are satisfied
+              </div>
             </div>
           </div>
         </div>
@@ -1873,58 +1939,71 @@
         </div>
       </div>
 
-      <!-- Slide 16: Physical Design -->
+      <!-- Slide 16: Flexible Licensing Modes -->
       <div class="slide-container">
         <div class="bg-grid"></div>
 
         <div class="header-bar">
           <div class="section-tag">
-            <i class="fas fa-sitemap"></i>
+            <i class="fas fa-sliders-h"></i>
             <span>System Design</span>
           </div>
           <div class="logo-text">Secure License Management System</div>
         </div>
 
         <div class="content-wrapper">
-          <h2>Physical Design (Components)</h2>
-          <div class="cards-grid">
-            <div class="card">
-              <div class="icon-box icon-blue">
-                <i class="fas fa-cloud"></i>
+          <h2>Flexible Licensing Modes</h2>
+          <div class="content-list" style="gap: 18px">
+            <div class="list-item" style="padding: 18px 24px">
+              <div
+                class="list-icon"
+                style="width: 60px; height: 60px; font-size: 26px"
+              >
+                <i class="fas fa-globe"></i>
               </div>
-              <div class="text-content">
-                <h3 class="card-title">Cloud/Local Server</h3>
-                <p class="card-desc">Hosting licensing API</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-green">
-                <i class="fas fa-database"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Database Server</h3>
-                <p class="card-desc">Storing licenses & logs</p>
+              <div class="list-text">
+                <strong style="color: #60a5fa; font-size: 19px"
+                  >Mode 1: Online Validation</strong
+                ><br />
+                <span style="font-size: 16px; color: #cbd5e1"
+                  >Real-time license validation with centralized control,
+                  instant revocation, and activity monitoring</span
+                >
               </div>
             </div>
-
-            <div class="card">
-              <div class="icon-box icon-purple">
-                <i class="fas fa-laptop"></i>
+            <div class="list-item" style="padding: 18px 24px">
+              <div
+                class="list-icon"
+                style="width: 60px; height: 60px; font-size: 26px"
+              >
+                <i class="fas fa-fingerprint"></i>
               </div>
-              <div class="text-content">
-                <h3 class="card-title">User Devices</h3>
-                <p class="card-desc">Running licensed applications</p>
+              <div class="list-text">
+                <strong style="color: #34d399; font-size: 19px"
+                  >Mode 2: Device Binding</strong
+                ><br />
+                <span style="font-size: 16px; color: #cbd5e1"
+                  >License bound to unique device fingerprint, preventing
+                  copying, sharing, and unauthorized transfers with secure
+                  offline validation</span
+                >
               </div>
             </div>
-
-            <div class="card">
-              <div class="icon-box icon-cyan">
+            <div class="list-item" style="padding: 18px 24px">
+              <div
+                class="list-icon"
+                style="width: 60px; height: 60px; font-size: 26px"
+              >
                 <i class="fas fa-network-wired"></i>
               </div>
-              <div class="text-content">
-                <h3 class="card-title">Secure Network</h3>
-                <p class="card-desc">Encrypted communication</p>
+              <div class="list-text">
+                <strong style="color: #fbbf24; font-size: 19px"
+                  >Mode 3: Session Control</strong
+                ><br />
+                <span style="font-size: 16px; color: #cbd5e1"
+                  >License usage through session limits, IP-based restrictions,
+                  and centralized environment management for organizations</span
+                >
               </div>
             </div>
           </div>
@@ -1936,7 +2015,361 @@
         </div>
       </div>
 
-      <!-- Slide 17: Acknowledgments -->
+      <!-- Slide 17: Core System Components -->
+      <div class="slide-container">
+        <div class="bg-grid"></div>
+
+        <div class="header-bar">
+          <div class="section-tag">
+            <i class="fas fa-cubes"></i>
+            <span>System Design</span>
+          </div>
+          <div class="logo-text">Secure License Management System</div>
+        </div>
+
+        <div class="content-wrapper">
+          <h2>Core System Components</h2>
+          <div class="cards-grid">
+            <div class="card">
+              <div class="icon-box icon-blue">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="text-content">
+                <h3 class="card-title">Licensing Server</h3>
+                <p class="card-desc">
+                  License generation, validation, revocation, and policy
+                  enforcement
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="icon-box icon-green">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="text-content">
+                <h3 class="card-title">Secure Database</h3>
+                <p class="card-desc">
+                  Encrypted licenses, device bindings, and activity logs
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="icon-box icon-purple">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="text-content">
+                <h3 class="card-title">Admin Dashboard</h3>
+                <p class="card-desc">
+                  Centralized license management and monitoring
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="icon-box icon-cyan">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="text-content">
+                <h3 class="card-title">License Agent</h3>
+                <p class="card-desc">
+                  Enforces encryption, device ID, and access control
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bar">
+          <span>Department of Cybersecurity - JUST</span>
+          <span>Page 17</span>
+        </div>
+      </div>
+
+      <!-- Slide 18: System Demonstration -->
+      <div class="slide-container">
+        <div class="bg-grid"></div>
+        <div class="accent-glow" style="bottom: -100px; right: -100px"></div>
+
+        <div class="header-bar">
+          <div class="section-tag">
+            <i class="fas fa-play-circle"></i>
+            <span>System Design</span>
+          </div>
+          <div class="logo-text">Secure License Management System</div>
+        </div>
+
+        <div class="content-wrapper">
+          <h2>System Demonstration (Mode 1)</h2>
+
+          <div
+            style="
+              background: rgba(30, 41, 59, 0.4);
+              border: 1px solid rgba(59, 130, 246, 0.2);
+              border-radius: 12px;
+              padding: 24px;
+              margin-bottom: 25px;
+            "
+          >
+            <p
+              style="
+                font-size: 17px;
+                line-height: 1.8;
+                color: #cbd5e1;
+                text-align: center;
+                margin: 0;
+              "
+            >
+              To validate the practical implementation of our system, a live
+              demonstration was conducted using
+              <strong style="color: #60a5fa"
+                >Mode 1 (Online License Validation)</strong
+              >. The demo environment includes a containerized licensing server,
+              a secure database, and a client application.
+            </p>
+          </div>
+
+          <div
+            class="subsection-title"
+            style="
+              font-size: 22px;
+              margin-bottom: 20px;
+              justify-content: center;
+            "
+          >
+            <i class="fas fa-tools"></i>
+            Technologies & Tools Used
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(247, 223, 30, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(247, 223, 30, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-code"
+                  style="font-size: 28px; color: #f7df1e"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9"
+                >JavaScript</strong
+              >
+            </div>
+
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(227, 79, 38, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(227, 79, 38, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-file-code"
+                  style="font-size: 28px; color: #e34f26"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9">HTML</strong>
+            </div>
+
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(36, 150, 237, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(36, 150, 237, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-cube"
+                  style="font-size: 28px; color: #2496ed"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9">Docker</strong>
+            </div>
+
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(71, 162, 72, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(71, 162, 72, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-database"
+                  style="font-size: 28px; color: #47a248"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9">MongoDB</strong>
+            </div>
+
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(255, 108, 55, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(255, 108, 55, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-vial"
+                  style="font-size: 28px; color: #ff6c37"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9">Postman</strong>
+            </div>
+
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(0, 122, 204, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(0, 122, 204, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-file-code"
+                  style="font-size: 28px; color: #007acc"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9">VS Code</strong>
+            </div>
+
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(159, 234, 249, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  background: rgba(159, 234, 249, 0.15);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 12px;
+                "
+              >
+                <i
+                  class="fas fa-desktop"
+                  style="font-size: 28px; color: #9feaf9"
+                ></i>
+              </div>
+              <strong style="font-size: 15px; color: #f1f5f9">Electron</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bar">
+          <span>Department of Cybersecurity - JUST</span>
+          <span>Page 18</span>
+        </div>
+      </div>
+
+      <!-- Slide 19: Acknowledgments -->
       <div class="slide-container">
         <div class="bg-grid"></div>
         <div
@@ -1987,7 +2420,7 @@
         </div>
       </div>
 
-      <!-- Slide 18: Thank You / Questions -->
+      <!-- Slide 20: Thank You / Questions -->
       <div class="slide-container">
         <div class="bg-grid"></div>
         <div
@@ -2059,12 +2492,12 @@
     <div class="keyboard-hint">
       <i class="fas fa-keyboard"></i>
       <span>Use ← → arrow keys to navigate</span>
-    </div> -->
+    </div>-->
 
     <script>
       let currentSlide = 0;
       const slides = document.querySelectorAll(".slide-container");
-      const totalSlides = slides.length; // Now 18 slides total
+      const totalSlides = slides.length; // Now 20 slides total
 
       function updateSlide() {
         slides.forEach((slide, index) => {
@@ -2108,28 +2541,6 @@
 
       // Initialize
       updateSlide();
-
-      const BASE_WIDTH = 1280;
-  const BASE_HEIGHT = 720;
-
-  function scalePresentation() {
-    const scale = Math.min(
-      window.innerWidth / BASE_WIDTH,
-      window.innerHeight / BASE_HEIGHT
-    );
-
-    document.querySelector(".presentation-wrapper").style.transform =
-      `scale(${scale})`;
-  }
-
-  window.addEventListener("resize", scalePresentation);
-  scalePresentation();
-
-      
     </script>
   </body>
 </html>
-
-
-
-
