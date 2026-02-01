@@ -31,15 +31,17 @@
         height: 100vh;
       }
 
-      .presentation-wrapper {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
+   .presentation-wrapper {
+  position: relative;
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform-origin: center center;
+}
+
 
       .slide-container {
         width: 1280px;
@@ -2107,9 +2109,26 @@
       // Initialize
       updateSlide();
 
+      const BASE_WIDTH = 1280;
+  const BASE_HEIGHT = 720;
+
+  function scalePresentation() {
+    const scale = Math.min(
+      window.innerWidth / BASE_WIDTH,
+      window.innerHeight / BASE_HEIGHT
+    );
+
+    document.querySelector(".presentation-wrapper").style.transform =
+      `scale(${scale})`;
+  }
+
+  window.addEventListener("resize", scalePresentation);
+  scalePresentation();
+
       
     </script>
   </body>
 </html>
+
 
 
