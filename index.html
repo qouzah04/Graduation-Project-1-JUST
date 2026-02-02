@@ -35,10 +35,16 @@
         position: relative;
         width: 100vw;
         height: 100vh;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+      }
+
+      .scale-stage {
+        width: 1280px;
+        height: 720px;
+        transform-origin: center center;
       }
 
       .slide-container {
@@ -874,1615 +880,1506 @@
   </head>
   <body>
     <div class="presentation-wrapper">
-      <!-- Slide 1: Title Slide -->
-      <div class="slide-container active">
-        <div class="bg-grid"></div>
-        <div
-          class="tech-circle"
-          style="width: 600px; height: 600px; top: -200px; right: -200px"
-        ></div>
-        <div
-          class="tech-circle"
-          style="
-            width: 400px;
-            height: 400px;
-            bottom: -100px;
-            left: -100px;
-            border-color: rgba(59, 130, 246, 0.1);
-          "
-        ></div>
+      <div class="scale-stage">
+        <!-- Slide 1: Title Slide -->
+        <div class="slide-container active">
+          <div class="bg-grid"></div>
+          <div
+            class="tech-circle"
+            style="width: 600px; height: 600px; top: -200px; right: -200px"
+          ></div>
+          <div
+            class="tech-circle"
+            style="
+              width: 400px;
+              height: 400px;
+              bottom: -100px;
+              left: -100px;
+              border-color: rgba(59, 130, 246, 0.1);
+            "
+          ></div>
 
-        <div class="main-content">
-          <div class="header-text">
-            <p>Jordan University of Science and Technology</p>
-            <p>Faculty of Computer & Information Technology</p>
-            <p>Department of Cybersecurity</p>
-          </div>
-
-          <div class="title-wrapper">
-            <div class="project-tag">
-              <i class="fas fa-graduation-cap"></i>
-              <span>Graduation Project # 1</span>
+          <div class="main-content">
+            <div class="header-text">
+              <p>Jordan University of Science and Technology</p>
+              <p>Faculty of Computer & Information Technology</p>
+              <p>Department of Cybersecurity</p>
             </div>
-            <h1>Secure License<br />Management System</h1>
-            <div class="divider"></div>
+
+            <div class="title-wrapper">
+              <div class="project-tag">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Graduation Project # 1</span>
+              </div>
+              <h1>Secure License<br />Management System</h1>
+              <div class="divider"></div>
+            </div>
+
+            <div class="footer-info">
+              <div class="team-section">
+                <p class="label"><i class="fas fa-users"></i> Project Team</p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                  "
+                >
+                  <div>
+                    <p class="name">Abdalqader Qouzah</p>
+                    <p class="name">Zakaria Abedalhaq</p>
+                  </div>
+                  <div>
+                    <p class="name">Gaith AlMaqableh</p>
+                    <p class="name">M'omen Al Subihi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="supervisor-section">
+                <p class="label">
+                  <i class="fas fa-chalkboard-teacher"></i> Supervised By
+                </p>
+                <p class="name" style="font-size: 22px; font-weight: 600">
+                  Dr. Assem Bsoul
+                </p>
+                <div class="semester-badge">
+                  <i class="far fa-calendar-alt"></i> Fall 2026
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Project Overview -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="top: -100px; right: -100px"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-info-circle"></i>
+              <span>Introduction</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
           </div>
 
-          <div class="footer-info">
-            <div class="team-section">
-              <p class="label"><i class="fas fa-users"></i> Project Team</p>
+          <div class="content-wrapper">
+            <h2>Project Overview</h2>
+            <div class="content-list">
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-shield-virus"></i></div>
+                <div class="list-text">
+                  Software piracy is a major cybersecurity challenge
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-key"></i></div>
+                <div class="list-text">
+                  Licensing controls access to applications and services
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-clock"></i></div>
+                <div class="list-text">
+                  Traditional systems are outdated and insecure
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-server"></i></div>
+                <div class="list-text">
+                  Our project proposes a secure server–agent licensing
+                  architecture
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-wifi"></i></div>
+                <div class="list-text">
+                  Supports both online and offline license validation
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 2</span>
+          </div>
+        </div>
+
+        <!-- Slide 3: Problem Statement -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="bottom: -100px; left: -100px"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-info-circle"></i>
+              <span>Introduction</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Problem Statement</h2>
+            <div class="content-list">
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-dollar-sign"></i></div>
+                <div class="list-text">
+                  Many existing licensing systems are expensive and
+                  closed-source
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-unlock"></i></div>
+                <div class="list-text">
+                  Simple license keys are easy to bypass or share
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-signal"></i></div>
+                <div class="list-text">
+                  Most systems require constant internet connectivity
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-users-slash"></i></div>
+                <div class="list-text">
+                  Small and medium developers lack secure affordable solutions
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-ban"></i></div>
+                <div class="list-text">
+                  Weak protection leads to piracy and revenue loss
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 3</span>
+          </div>
+        </div>
+
+        <!-- Slide 4: Significance -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="top: 50%; right: -100px"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-info-circle"></i>
+              <span>Introduction</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Significance of the Study</h2>
+            <div class="content-list">
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="list-text">
+                  Protects software from unauthorized usage
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-lock"></i></div>
+                <div class="list-text">
+                  Enhances cybersecurity of software products
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-plug"></i></div>
+                <div class="list-text">Supports secure offline access</div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-cog"></i></div>
+                <div class="list-text">
+                  Helps developers control license policies
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="list-text">Reduces piracy and misuse risks</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 4</span>
+          </div>
+        </div>
+
+        <!-- Slide 5: Project Objectives -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="bottom: 50%; left: -100px"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-bullseye"></i>
+              <span>Objectives and Contributions</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Project Objectives</h2>
+            <div class="content-list">
+              <div class="list-item">
+                <div class="list-icon">
+                  <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="list-text">
+                  Design a secure license management system for software
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-database"></i></div>
+                <div class="list-text">
+                  Implement centralized license validation using a server
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-fingerprint"></i></div>
+                <div class="list-text">
+                  Bind licenses to devices using secure fingerprints
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="list-text">
+                  Support offline license verification securely
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-user-lock"></i></div>
+                <div class="list-text">
+                  Prevent unauthorized access and license sharing
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 5</span>
+          </div>
+        </div>
+
+        <!-- Slide 6: Key Contributions -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="top: -100px; left: 50%"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-bullseye"></i>
+              <span>Objectives and Contributions</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Key Contributions of the Project</h2>
+            <div class="content-list">
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-puzzle-piece"></i></div>
+                <div class="list-text">
+                  A flexible multi-mode licensing system
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="list-text">Secure server–agent architecture</div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-file-shield"></i></div>
+                <div class="list-text">
+                  Encrypted license storage for offline use
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <div class="list-text">
+                  Affordable alternative to enterprise licensing tools
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-rocket"></i></div>
+                <div class="list-text">
+                  Practical real-world cybersecurity solution
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 6</span>
+          </div>
+        </div>
+
+        <!-- Slide 7: Project Deliverables -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-tasks"></i>
+              <span>Project Plan</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Project Deliverables</h2>
+            <div class="cards-grid">
+              <div class="card">
+                <div class="icon-box icon-blue">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">License Server API</h3>
+                  <p class="card-desc">
+                    RESTful API for license generation and validation
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="icon-box icon-green">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Secure Database System</h3>
+                  <p class="card-desc">
+                    Encrypted storage for licenses and user data
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="icon-box icon-purple">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Admin Dashboard</h3>
+                  <p class="card-desc">Web interface for license management</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="icon-box icon-yellow">
+                  <i class="fas fa-desktop"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Client License Agent</h3>
+                  <p class="card-desc">
+                    Embedded agent for application validation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 7</span>
+          </div>
+        </div>
+
+        <!-- Slide 8: Timeline -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-tasks"></i>
+              <span>Project Plan</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>High-Level Tasks & Timeline</h2>
+            <div class="timeline-container">
+              <div class="timeline-track"></div>
+              <div class="timeline-track-active"></div>
               <div
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px"
+                class="steps-wrapper"
+                style="grid-template-columns: repeat(5, 1fr)"
               >
-                <div>
-                  <p class="name">Abdalqader Qouzah</p>
-                  <p class="name">Zakaria Abedalhaq</p>
+                <div class="step-col">
+                  <div class="connector-line"></div>
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <span class="phase-number">Phase 1</span>
+                    <i class="fas fa-clipboard-list phase-icon"></i>
+                    <p class="phase-title">Project Initialization & Analysis</p>
+                    <p
+                      style="
+                        font-size: 11px;
+                        color: #60a5fa;
+                        margin-top: 8px;
+                        font-family: &quot;Roboto Mono&quot;, monospace;
+                      "
+                    >
+                      2 Weeks
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="name">Gaith AlMaqableh</p>
-                  <p class="name">M'omen Al Subihi</p>
+
+                <div class="step-col">
+                  <div class="connector-line"></div>
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <span class="phase-number">Phase 2</span>
+                    <i class="fas fa-book-reader phase-icon"></i>
+                    <p class="phase-title">Literature Review</p>
+                    <p
+                      style="
+                        font-size: 11px;
+                        color: #60a5fa;
+                        margin-top: 8px;
+                        font-family: &quot;Roboto Mono&quot;, monospace;
+                      "
+                    >
+                      3 Weeks
+                    </p>
+                  </div>
+                </div>
+
+                <div class="step-col">
+                  <div class="connector-line"></div>
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <span class="phase-number">Phase 3</span>
+                    <i class="fas fa-pencil-ruler phase-icon"></i>
+                    <p class="phase-title">System Design</p>
+                    <p
+                      style="
+                        font-size: 11px;
+                        color: #60a5fa;
+                        margin-top: 8px;
+                        font-family: &quot;Roboto Mono&quot;, monospace;
+                      "
+                    >
+                      4 Weeks
+                    </p>
+                  </div>
+                </div>
+
+                <div class="step-col">
+                  <div class="connector-line"></div>
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <span class="phase-number">Phase 4</span>
+                    <i class="fas fa-desktop phase-icon"></i>
+                    <p class="phase-title">Demo Implementation</p>
+                    <p
+                      style="
+                        font-size: 11px;
+                        color: #60a5fa;
+                        margin-top: 8px;
+                        font-family: &quot;Roboto Mono&quot;, monospace;
+                      "
+                    >
+                      4 Weeks
+                    </p>
+                  </div>
+                </div>
+
+                <div class="step-col">
+                  <div class="connector-line"></div>
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <span class="phase-number">Phase 5</span>
+                    <i class="fas fa-file-contract phase-icon"></i>
+                    <p class="phase-title">Documentation & Release</p>
+                    <p
+                      style="
+                        font-size: 11px;
+                        color: #60a5fa;
+                        margin-top: 8px;
+                        font-family: &quot;Roboto Mono&quot;, monospace;
+                      "
+                    >
+                      2 Weeks
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="supervisor-section">
-              <p class="label">
-                <i class="fas fa-chalkboard-teacher"></i> Supervised By
-              </p>
-              <p class="name" style="font-size: 22px; font-weight: 600">
-                Dr. Assem Bsoul
-              </p>
-              <div class="semester-badge">
-                <i class="far fa-calendar-alt"></i> Fall 2026
-              </div>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Slide 2: Project Overview -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="top: -100px; right: -100px"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-info-circle"></i>
-            <span>Introduction</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Project Overview</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-shield-virus"></i></div>
-              <div class="list-text">
-                Software piracy is a major cybersecurity challenge
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-key"></i></div>
-              <div class="list-text">
-                Licensing controls access to applications and services
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-clock"></i></div>
-              <div class="list-text">
-                Traditional systems are outdated and insecure
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-server"></i></div>
-              <div class="list-text">
-                Our project proposes a secure server–agent licensing
-                architecture
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-wifi"></i></div>
-              <div class="list-text">
-                Supports both online and offline license validation
-              </div>
-            </div>
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 8</span>
           </div>
         </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 2</span>
-        </div>
-      </div>
+        <!-- Slide 9: Risk Assessment -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="bottom: -100px; left: 20%"></div>
 
-      <!-- Slide 3: Problem Statement -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="bottom: -100px; left: -100px"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-info-circle"></i>
-            <span>Introduction</span>
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-exclamation-triangle"></i>
+              <span>Project Plan</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
           </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
 
-        <div class="content-wrapper">
-          <h2>Problem Statement</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-dollar-sign"></i></div>
-              <div class="list-text">
-                Many existing licensing systems are expensive and closed-source
+          <div class="content-wrapper">
+            <h2>Risk Assessment</h2>
+            <div class="risk-grid">
+              <div class="risk-card">
+                <div class="risk-side">
+                  <div class="risk-label label-risk">
+                    <i class="fas fa-bolt"></i> Potential Risk
+                  </div>
+                  <i class="fas fa-server risk-icon icon-risk"></i>
+                  <p class="risk-title">Server Downtime</p>
+                </div>
+                <div class="mitigation-side">
+                  <div class="arrow-indicator">
+                    <i class="fas fa-chevron-right" style="font-size: 10px"></i>
+                  </div>
+                  <div class="risk-label label-mitigation">
+                    <i class="fas fa-shield-alt"></i> Mitigation
+                  </div>
+                  <i class="fas fa-hdd risk-icon icon-mitigation"></i>
+                  <p class="risk-title">Backups & Monitoring</p>
+                </div>
               </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-unlock"></i></div>
-              <div class="list-text">
-                Simple license keys are easy to bypass or share
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-signal"></i></div>
-              <div class="list-text">
-                Most systems require constant internet connectivity
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-users-slash"></i></div>
-              <div class="list-text">
-                Small and medium developers lack secure affordable solutions
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-ban"></i></div>
-              <div class="list-text">
-                Weak protection leads to piracy and revenue loss
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 3</span>
-        </div>
-      </div>
+              <div class="risk-card">
+                <div class="risk-side">
+                  <div class="risk-label label-risk">
+                    <i class="fas fa-bolt"></i> Potential Risk
+                  </div>
+                  <i class="fas fa-user-secret risk-icon icon-risk"></i>
+                  <p class="risk-title">Security Attacks</p>
+                </div>
+                <div class="mitigation-side">
+                  <div class="arrow-indicator">
+                    <i class="fas fa-chevron-right" style="font-size: 10px"></i>
+                  </div>
+                  <div class="risk-label label-mitigation">
+                    <i class="fas fa-shield-alt"></i> Mitigation
+                  </div>
+                  <i class="fas fa-lock risk-icon icon-mitigation"></i>
+                  <p class="risk-title">Encryption & HTTPS</p>
+                </div>
+              </div>
 
-      <!-- Slide 4: Significance -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="top: 50%; right: -100px"></div>
+              <div class="risk-card">
+                <div class="risk-side">
+                  <div class="risk-label label-risk">
+                    <i class="fas fa-bolt"></i> Potential Risk
+                  </div>
+                  <i class="fas fa-puzzle-piece risk-icon icon-risk"></i>
+                  <p class="risk-title">Integration Issues</p>
+                </div>
+                <div class="mitigation-side">
+                  <div class="arrow-indicator">
+                    <i class="fas fa-chevron-right" style="font-size: 10px"></i>
+                  </div>
+                  <div class="risk-label label-mitigation">
+                    <i class="fas fa-shield-alt"></i> Mitigation
+                  </div>
+                  <i class="fas fa-vial risk-icon icon-mitigation"></i>
+                  <p class="risk-title">Early Testing</p>
+                </div>
+              </div>
 
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-info-circle"></i>
-            <span>Introduction</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Significance of the Study</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-shield-alt"></i></div>
-              <div class="list-text">
-                Protects software from unauthorized usage
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-lock"></i></div>
-              <div class="list-text">
-                Enhances cybersecurity of software products
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-plug"></i></div>
-              <div class="list-text">Supports secure offline access</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-cog"></i></div>
-              <div class="list-text">
-                Helps developers control license policies
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-chart-line"></i></div>
-              <div class="list-text">Reduces piracy and misuse risks</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 4</span>
-        </div>
-      </div>
-
-      <!-- Slide 5: Project Objectives -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="bottom: 50%; left: -100px"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-bullseye"></i>
-            <span>Objectives and Contributions</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Project Objectives</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon">
-                <i class="fas fa-drafting-compass"></i>
-              </div>
-              <div class="list-text">
-                Design a secure license management system for software
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-database"></i></div>
-              <div class="list-text">
-                Implement centralized license validation using a server
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-fingerprint"></i></div>
-              <div class="list-text">
-                Bind licenses to devices using secure fingerprints
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-check-circle"></i></div>
-              <div class="list-text">
-                Support offline license verification securely
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-user-lock"></i></div>
-              <div class="list-text">
-                Prevent unauthorized access and license sharing
+              <div class="risk-card">
+                <div class="risk-side">
+                  <div class="risk-label label-risk">
+                    <i class="fas fa-bolt"></i> Potential Risk
+                  </div>
+                  <i class="fas fa-user-times risk-icon icon-risk"></i>
+                  <p class="risk-title">User Errors</p>
+                </div>
+                <div class="mitigation-side">
+                  <div class="arrow-indicator">
+                    <i class="fas fa-chevron-right" style="font-size: 10px"></i>
+                  </div>
+                  <div class="risk-label label-mitigation">
+                    <i class="fas fa-shield-alt"></i> Mitigation
+                  </div>
+                  <i class="fas fa-undo-alt risk-icon icon-mitigation"></i>
+                  <p class="risk-title">Validation & Recovery</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 5</span>
-        </div>
-      </div>
-
-      <!-- Slide 6: Key Contributions -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="top: -100px; left: 50%"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-bullseye"></i>
-            <span>Objectives and Contributions</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Key Contributions of the Project</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-puzzle-piece"></i></div>
-              <div class="list-text">
-                A flexible multi-mode licensing system
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-network-wired"></i></div>
-              <div class="list-text">Secure server–agent architecture</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-file-shield"></i></div>
-              <div class="list-text">
-                Encrypted license storage for offline use
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon">
-                <i class="fas fa-hand-holding-usd"></i>
-              </div>
-              <div class="list-text">
-                Affordable alternative to enterprise licensing tools
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-rocket"></i></div>
-              <div class="list-text">
-                Practical real-world cybersecurity solution
-              </div>
-            </div>
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 9</span>
           </div>
         </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 6</span>
-        </div>
-      </div>
+        <!-- Slide 10: Related Work -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
 
-      <!-- Slide 7: Project Deliverables -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-tasks"></i>
-            <span>Project Plan</span>
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-book-open"></i>
+              <span>Literature Review</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
           </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
 
-        <div class="content-wrapper">
-          <h2>Project Deliverables</h2>
-          <div class="cards-grid">
-            <div class="card">
-              <div class="icon-box icon-blue">
-                <i class="fas fa-cloud"></i>
+          <div class="content-wrapper">
+            <h2>Related Work & Identified Gap</h2>
+            <div class="two-column">
+              <div class="column">
+                <div class="subsection-title">
+                  <i class="fas fa-search"></i>
+                  Existing Licensing Systems
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-building"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Enterprise solutions (Flexera, Sentinel RMS)
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-cloud"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Cloud-based activation systems (Microsoft KMS, IoT platforms)
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-key"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Key-based and token-based licensing approaches
+                </div>
               </div>
-              <div class="text-content">
-                <h3 class="card-title">License Server API</h3>
-                <p class="card-desc">
-                  RESTful API for license generation and validation
-                </p>
-              </div>
-            </div>
 
-            <div class="card">
-              <div class="icon-box icon-green">
-                <i class="fas fa-database"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Secure Database System</h3>
-                <p class="card-desc">
-                  Encrypted storage for licenses and user data
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-purple">
-                <i class="fas fa-tachometer-alt"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Admin Dashboard</h3>
-                <p class="card-desc">Web interface for license management</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-yellow">
-                <i class="fas fa-desktop"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Client License Agent</h3>
-                <p class="card-desc">
-                  Embedded agent for application validation
-                </p>
+              <div class="column">
+                <div class="subsection-title">
+                  <i class="fas fa-exclamation-circle"></i>
+                  Limitations Identified
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-dollar-sign"
+                    style="color: #f87171; margin-right: 10px"
+                  ></i>
+                  Heavy and expensive for small developers
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-wifi"
+                    style="color: #f87171; margin-right: 10px"
+                  ></i>
+                  Strong dependence on internet connectivity
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-plug"
+                    style="color: #f87171; margin-right: 10px"
+                  ></i>
+                  Weak offline validation mechanisms
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-unlink"
+                    style="color: #f87171; margin-right: 10px"
+                  ></i>
+                  Poor device binding and anti-sharing protection
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 7</span>
-        </div>
-      </div>
-
-      <!-- Slide 8: Timeline -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-tasks"></i>
-            <span>Project Plan</span>
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 10</span>
           </div>
-          <div class="logo-text">Secure License Management System</div>
         </div>
 
-        <div class="content-wrapper">
-          <h2>High-Level Tasks & Timeline</h2>
-          <div class="timeline-container">
-            <div class="timeline-track"></div>
-            <div class="timeline-track-active"></div>
-            <div
-              class="steps-wrapper"
-              style="grid-template-columns: repeat(5, 1fr)"
-            >
-              <div class="step-col">
-                <div class="connector-line"></div>
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                  <span class="phase-number">Phase 1</span>
-                  <i class="fas fa-clipboard-list phase-icon"></i>
-                  <p class="phase-title">Project Initialization & Analysis</p>
-                  <p
-                    style="
-                      font-size: 11px;
-                      color: #60a5fa;
-                      margin-top: 8px;
-                      font-family: &quot;Roboto Mono&quot;, monospace;
-                    "
-                  >
-                    2 Weeks
+        <!-- Slide 11: Stakeholders -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-list-check"></i>
+              <span>Requirements Specification</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Stakeholders</h2>
+            <div class="cards-grid">
+              <div class="card">
+                <div class="icon-box icon-blue">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">System Administrator</h3>
+                  <p class="card-desc">
+                    Owns the platform and manages applications, and system
+                    policies
                   </p>
                 </div>
               </div>
 
-              <div class="step-col">
-                <div class="connector-line"></div>
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                  <span class="phase-number">Phase 2</span>
-                  <i class="fas fa-book-reader phase-icon"></i>
-                  <p class="phase-title">Literature Review</p>
-                  <p
-                    style="
-                      font-size: 11px;
-                      color: #60a5fa;
-                      margin-top: 8px;
-                      font-family: &quot;Roboto Mono&quot;, monospace;
-                    "
-                  >
-                    3 Weeks
-                  </p>
+              <div class="card">
+                <div class="icon-box icon-green">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Application Owners</h3>
+                  <p class="card-desc">Create and control licenses</p>
                 </div>
               </div>
 
-              <div class="step-col">
-                <div class="connector-line"></div>
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                  <span class="phase-number">Phase 3</span>
-                  <i class="fas fa-pencil-ruler phase-icon"></i>
-                  <p class="phase-title">System Design</p>
-                  <p
-                    style="
-                      font-size: 11px;
-                      color: #60a5fa;
-                      margin-top: 8px;
-                      font-family: &quot;Roboto Mono&quot;, monospace;
-                    "
-                  >
-                    4 Weeks
-                  </p>
+              <div class="card">
+                <div class="icon-box icon-yellow">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">End Users</h3>
+                  <p class="card-desc">Use licensed software</p>
                 </div>
               </div>
 
-              <div class="step-col">
-                <div class="connector-line"></div>
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                  <span class="phase-number">Phase 4</span>
-                  <i class="fas fa-desktop phase-icon"></i>
-                  <p class="phase-title">Demo Implementation</p>
-                  <p
-                    style="
-                      font-size: 11px;
-                      color: #60a5fa;
-                      margin-top: 8px;
-                      font-family: &quot;Roboto Mono&quot;, monospace;
-                    "
-                  >
-                    4 Weeks
-                  </p>
+              <div class="card">
+                <div class="icon-box icon-red">
+                  <i class="fas fa-laptop-code"></i>
                 </div>
-              </div>
-
-              <div class="step-col">
-                <div class="connector-line"></div>
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                  <span class="phase-number">Phase 5</span>
-                  <i class="fas fa-file-contract phase-icon"></i>
-                  <p class="phase-title">Documentation & Release</p>
-                  <p
-                    style="
-                      font-size: 11px;
-                      color: #60a5fa;
-                      margin-top: 8px;
-                      font-family: &quot;Roboto Mono&quot;, monospace;
-                    "
-                  >
-                    2 Weeks
-                  </p>
+                <div class="text-content">
+                  <h3 class="card-title">Client Devices</h3>
+                  <p class="card-desc">Enforce license validation</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 8</span>
-        </div>
-      </div>
-
-      <!-- Slide 9: Risk Assessment -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="bottom: -100px; left: 20%"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-exclamation-triangle"></i>
-            <span>Project Plan</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Risk Assessment</h2>
-          <div class="risk-grid">
-            <div class="risk-card">
-              <div class="risk-side">
-                <div class="risk-label label-risk">
-                  <i class="fas fa-bolt"></i> Potential Risk
-                </div>
-                <i class="fas fa-server risk-icon icon-risk"></i>
-                <p class="risk-title">Server Downtime</p>
-              </div>
-              <div class="mitigation-side">
-                <div class="arrow-indicator">
-                  <i class="fas fa-chevron-right" style="font-size: 10px"></i>
-                </div>
-                <div class="risk-label label-mitigation">
-                  <i class="fas fa-shield-alt"></i> Mitigation
-                </div>
-                <i class="fas fa-hdd risk-icon icon-mitigation"></i>
-                <p class="risk-title">Backups & Monitoring</p>
-              </div>
-            </div>
-
-            <div class="risk-card">
-              <div class="risk-side">
-                <div class="risk-label label-risk">
-                  <i class="fas fa-bolt"></i> Potential Risk
-                </div>
-                <i class="fas fa-user-secret risk-icon icon-risk"></i>
-                <p class="risk-title">Security Attacks</p>
-              </div>
-              <div class="mitigation-side">
-                <div class="arrow-indicator">
-                  <i class="fas fa-chevron-right" style="font-size: 10px"></i>
-                </div>
-                <div class="risk-label label-mitigation">
-                  <i class="fas fa-shield-alt"></i> Mitigation
-                </div>
-                <i class="fas fa-lock risk-icon icon-mitigation"></i>
-                <p class="risk-title">Encryption & HTTPS</p>
-              </div>
-            </div>
-
-            <div class="risk-card">
-              <div class="risk-side">
-                <div class="risk-label label-risk">
-                  <i class="fas fa-bolt"></i> Potential Risk
-                </div>
-                <i class="fas fa-puzzle-piece risk-icon icon-risk"></i>
-                <p class="risk-title">Integration Issues</p>
-              </div>
-              <div class="mitigation-side">
-                <div class="arrow-indicator">
-                  <i class="fas fa-chevron-right" style="font-size: 10px"></i>
-                </div>
-                <div class="risk-label label-mitigation">
-                  <i class="fas fa-shield-alt"></i> Mitigation
-                </div>
-                <i class="fas fa-vial risk-icon icon-mitigation"></i>
-                <p class="risk-title">Early Testing</p>
-              </div>
-            </div>
-
-            <div class="risk-card">
-              <div class="risk-side">
-                <div class="risk-label label-risk">
-                  <i class="fas fa-bolt"></i> Potential Risk
-                </div>
-                <i class="fas fa-user-times risk-icon icon-risk"></i>
-                <p class="risk-title">User Errors</p>
-              </div>
-              <div class="mitigation-side">
-                <div class="arrow-indicator">
-                  <i class="fas fa-chevron-right" style="font-size: 10px"></i>
-                </div>
-                <div class="risk-label label-mitigation">
-                  <i class="fas fa-shield-alt"></i> Mitigation
-                </div>
-                <i class="fas fa-undo-alt risk-icon icon-mitigation"></i>
-                <p class="risk-title">Validation & Recovery</p>
-              </div>
-            </div>
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 11</span>
           </div>
         </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 9</span>
-        </div>
-      </div>
+        <!-- Slide 12: Functional Requirements -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
 
-      <!-- Slide 10: Related Work -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-book-open"></i>
-            <span>Literature Review</span>
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-list-check"></i>
+              <span>Requirements Specification</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
           </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
 
-        <div class="content-wrapper">
-          <h2>Related Work & Identified Gap</h2>
-          <div class="two-column">
-            <div class="column">
-              <div class="subsection-title">
-                <i class="fas fa-search"></i>
-                Existing Licensing Systems
+          <div class="content-wrapper">
+            <h2>Functional Requirements</h2>
+            <div class="two-column">
+              <div class="column">
+                <div class="subsection-title">
+                  <i class="fas fa-server"></i>
+                  Server Side
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-plus-circle"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Generate licenses
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-check-circle"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Validate licenses online
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-ban"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Revoke or suspend licenses
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-clipboard-list"
+                    style="color: #60a5fa; margin-right: 10px"
+                  ></i>
+                  Log license activities
+                </div>
               </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-building"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Enterprise solutions (Flexera, Sentinel RMS)
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-cloud"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Cloud-based activation systems (Microsoft KMS, IoT platforms)
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-key"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Key-based and token-based licensing approaches
-              </div>
-            </div>
 
-            <div class="column">
-              <div class="subsection-title">
-                <i class="fas fa-exclamation-circle"></i>
-                Limitations Identified
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-dollar-sign"
-                  style="color: #f87171; margin-right: 10px"
-                ></i>
-                Heavy and expensive for small developers
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-wifi"
-                  style="color: #f87171; margin-right: 10px"
-                ></i>
-                Strong dependence on internet connectivity
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-plug"
-                  style="color: #f87171; margin-right: 10px"
-                ></i>
-                Weak offline validation mechanisms
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-unlink"
-                  style="color: #f87171; margin-right: 10px"
-                ></i>
-                Poor device binding and anti-sharing protection
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 10</span>
-        </div>
-      </div>
-
-      <!-- Slide 11: Stakeholders -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-list-check"></i>
-            <span>Requirements Specification</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Stakeholders</h2>
-          <div class="cards-grid">
-            <div class="card">
-              <div class="icon-box icon-blue">
-                <i class="fas fa-user-shield"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">System Administrator</h3>
-                <p class="card-desc">
-                  Owns the platform and manages applications, and system
-                  policies
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-green">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Application Owners</h3>
-                <p class="card-desc">Create and control licenses</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-yellow">
-                <i class="fas fa-users"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">End Users</h3>
-                <p class="card-desc">Use licensed software</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-red">
-                <i class="fas fa-laptop-code"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Client Devices</h3>
-                <p class="card-desc">Enforce license validation</p>
+              <div class="column">
+                <div class="subsection-title">
+                  <i class="fas fa-desktop"></i>
+                  Client Side
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-shield-alt"
+                    style="color: #34d399; margin-right: 10px"
+                  ></i>
+                  Protected Application Launch
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-check-double"
+                    style="color: #34d399; margin-right: 10px"
+                  ></i>
+                  Validate licenses offline
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-lock"
+                    style="color: #34d399; margin-right: 10px"
+                  ></i>
+                  Encrypt license storage
+                </div>
+                <div class="subsection-item">
+                  <i
+                    class="fas fa-sync"
+                    style="color: #34d399; margin-right: 10px"
+                  ></i>
+                  Sync with server
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 11</span>
-        </div>
-      </div>
-
-      <!-- Slide 12: Functional Requirements -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-list-check"></i>
-            <span>Requirements Specification</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Functional Requirements</h2>
-          <div class="two-column">
-            <div class="column">
-              <div class="subsection-title">
-                <i class="fas fa-server"></i>
-                Server Side
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-plus-circle"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Generate licenses
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-check-circle"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Validate licenses online
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-ban"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Revoke or suspend licenses
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-clipboard-list"
-                  style="color: #60a5fa; margin-right: 10px"
-                ></i>
-                Log license activities
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="subsection-title">
-                <i class="fas fa-desktop"></i>
-                Client Side
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-fingerprint"
-                  style="color: #34d399; margin-right: 10px"
-                ></i>
-                Identify device securely
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-check-double"
-                  style="color: #34d399; margin-right: 10px"
-                ></i>
-                Validate licenses offline
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-lock"
-                  style="color: #34d399; margin-right: 10px"
-                ></i>
-                Encrypt license storage
-              </div>
-              <div class="subsection-item">
-                <i
-                  class="fas fa-sync"
-                  style="color: #34d399; margin-right: 10px"
-                ></i>
-                Sync with server
-              </div>
-            </div>
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 12</span>
           </div>
         </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 12</span>
-        </div>
-      </div>
+        <!-- Slide 13: Non-Functional Requirements -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="top: 50%; left: 50%"></div>
 
-      <!-- Slide 13: Non-Functional Requirements -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="top: 50%; left: 50%"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-list-check"></i>
-            <span>Requirements Specification</span>
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-list-check"></i>
+              <span>Requirements Specification</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
           </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
 
-        <div class="content-wrapper">
-          <h2>Non-Functional Requirements</h2>
-          <div class="content-list">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-shield-alt"></i></div>
-              <div class="list-text">
-                Strong encryption & secure communication
+          <div class="content-wrapper">
+            <h2>Non-Functional Requirements</h2>
+            <div class="content-list">
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="list-text">
+                  Strong encryption & secure communication
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="list-text">Fast validation performance</div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-plug"></i></div>
+                <div class="list-text">Offline reliability</div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <div class="list-text">Scalable license handling</div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-user-check"></i></div>
+                <div class="list-text">Easy-to-use admin tools</div>
               </div>
             </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-tachometer-alt"></i></div>
-              <div class="list-text">Fast validation performance</div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 13</span>
+          </div>
+        </div>
+
+        <!-- Slide 14: System Design Approach -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="top: 50%; left: 50%"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-drafting-compass"></i>
+              <span>System Design</span>
             </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-plug"></i></div>
-              <div class="list-text">Offline reliability</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon">
-                <i class="fas fa-expand-arrows-alt"></i>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div
+            class="content-wrapper"
+            style="
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            "
+          >
+            <div style="max-width: 1000px; margin: 0 auto">
+              <div style="margin-bottom: 40px">
+                <div
+                  style="
+                    display: inline-block;
+                    background: rgba(59, 130, 246, 0.15);
+                    padding: 20px;
+                    border-radius: 50%;
+                    margin-bottom: 30px;
+                    border: 2px solid rgba(59, 130, 246, 0.3);
+                  "
+                >
+                  <i
+                    class="fas fa-sitemap"
+                    style="font-size: 64px; color: #60a5fa"
+                  ></i>
+                </div>
+                <h2 style="text-align: center; margin-bottom: 25px">
+                  System Design Approach
+                </h2>
+                <div
+                  class="divider"
+                  style="width: 100px; margin: 0 auto 40px"
+                ></div>
               </div>
-              <div class="list-text">Scalable license handling</div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-user-check"></i></div>
-              <div class="list-text">Easy-to-use admin tools</div>
-            </div>
-          </div>
-        </div>
 
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 13</span>
-        </div>
-      </div>
-
-      <!-- Slide 14: System Design Approach -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="top: 50%; left: 50%"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-drafting-compass"></i>
-            <span>System Design</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div
-          class="content-wrapper"
-          style="
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <div style="max-width: 1000px; margin: 0 auto">
-            <div style="margin-bottom: 40px">
-              <div
+              <p
                 style="
-                  display: inline-block;
-                  background: rgba(59, 130, 246, 0.15);
-                  padding: 20px;
-                  border-radius: 50%;
-                  margin-bottom: 30px;
-                  border: 2px solid rgba(59, 130, 246, 0.3);
+                  font-size: 20px;
+                  line-height: 1.9;
+                  color: #cbd5e1;
+                  text-align: center;
+                  max-width: 950px;
+                  margin: 0 auto;
                 "
               >
-                <i
-                  class="fas fa-sitemap"
-                  style="font-size: 64px; color: #60a5fa"
-                ></i>
+                This section presents the overall structure of the licensing
+                system, including the operational workflow, supported licensing
+                modes, core system components, and a live demonstration of the
+                implemented solution.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 14</span>
+          </div>
+        </div>
+
+        <!-- Slide 15: End-to-End Workflow -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-sync-alt"></i>
+              <span>System Design</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>End-to-End Licensing Workflow</h2>
+            <div class="content-list" style="gap: 14px">
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-download"></i></div>
+                <div class="list-text">
+                  User installs the application and activates it using a license
+                  key or authenticated account
+                </div>
               </div>
-              <h2 style="text-align: center; margin-bottom: 25px">
-                System Design Approach
-              </h2>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-handshake"></i></div>
+                <div class="list-text">
+                  Embedded License Agent securely communicates with Licensing
+                  Server for verification
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-certificate"></i></div>
+                <div class="list-text">
+                  After successful validation, an encrypted license is issued
+                  and stored locally on the device
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-redo"></i></div>
+                <div class="list-text">
+                  On each launch, agent revalidates license locally and
+                  synchronizes with server when online
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-icon"><i class="fas fa-shield-check"></i></div>
+                <div class="list-text">
+                  Access is granted only when all security policies are
+                  satisfied
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 15</span>
+          </div>
+        </div>
+
+        <!-- Slide 16: Flexible Licensing Modes -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-sliders-h"></i>
+              <span>System Design</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Flexible Licensing Modes</h2>
+            <div class="content-list" style="gap: 18px">
+              <div class="list-item" style="padding: 18px 24px">
+                <div
+                  class="list-icon"
+                  style="width: 60px; height: 60px; font-size: 26px"
+                >
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="list-text">
+                  <strong style="color: #60a5fa; font-size: 19px"
+                    >Mode 1: Online Validation</strong
+                  ><br />
+                  <span style="font-size: 16px; color: #cbd5e1"
+                    >Real-time license validation with centralized control,
+                    instant revocation, and activity monitoring</span
+                  >
+                </div>
+              </div>
+              <div class="list-item" style="padding: 18px 24px">
+                <div
+                  class="list-icon"
+                  style="width: 60px; height: 60px; font-size: 26px"
+                >
+                  <i class="fas fa-fingerprint"></i>
+                </div>
+                <div class="list-text">
+                  <strong style="color: #34d399; font-size: 19px"
+                    >Mode 2: Device Binding</strong
+                  ><br />
+                  <span style="font-size: 16px; color: #cbd5e1"
+                    >License bound to unique device fingerprint, preventing
+                    copying, sharing, and unauthorized transfers with secure
+                    offline validation</span
+                  >
+                </div>
+              </div>
+              <div class="list-item" style="padding: 18px 24px">
+                <div
+                  class="list-icon"
+                  style="width: 60px; height: 60px; font-size: 26px"
+                >
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="list-text">
+                  <strong style="color: #fbbf24; font-size: 19px"
+                    >Mode 3: Session Control</strong
+                  ><br />
+                  <span style="font-size: 16px; color: #cbd5e1"
+                    >License usage through session limits, IP-based
+                    restrictions, and centralized environment management for
+                    organizations</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 16</span>
+          </div>
+        </div>
+
+        <!-- Slide 17: Core System Components -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-cubes"></i>
+              <span>System Design</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Core System Components</h2>
+            <div class="cards-grid">
+              <div class="card">
+                <div class="icon-box icon-blue">
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Licensing Server</h3>
+                  <p class="card-desc">
+                    License generation, validation, revocation, and policy
+                    enforcement
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="icon-box icon-green">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Secure Database</h3>
+                  <p class="card-desc">
+                    Encrypted licenses, device bindings, and activity logs
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="icon-box icon-purple">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">Admin Dashboard</h3>
+                  <p class="card-desc">
+                    Centralized license management and monitoring
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="icon-box icon-cyan">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="text-content">
+                  <h3 class="card-title">License Agent</h3>
+                  <p class="card-desc">
+                    Enforces encryption, device ID, and access control
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 17</span>
+          </div>
+        </div>
+
+        <!-- Slide 18: System Demonstration -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div class="accent-glow" style="bottom: -100px; right: -100px"></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-play-circle"></i>
+              <span>System Design</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>System Demonstration (Mode 1)</h2>
+            <div style="display: flex; flex-direction: column; gap: 20px">
+              <div
+                class="acknowledgment-content"
+                style="text-align: left; margin-bottom: 10px"
+              >
+                <p
+                  class="acknowledgment-text"
+                  style="font-size: 17px; line-height: 1.7"
+                >
+                  To validate the practical implementation of our system, a live
+                  demonstration was conducted using Mode 1 (Online License
+                  Validation). The demo environment includes a containerized
+                  licensing server, a secure database, and a client application.
+                </p>
+              </div>
+
+              <div
+                class="subsection-title"
+                style="font-size: 20px; margin-bottom: 10px"
+              >
+                <i class="fas fa-tools"></i>
+                Technologies Used
+              </div>
+
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 15px;
+                "
+              >
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fab fa-js"
+                    style="
+                      font-size: 32px;
+                      color: #f7df1e;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">JavaScript</strong>
+                </div>
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fab fa-html5"
+                    style="
+                      font-size: 32px;
+                      color: #e34f26;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">HTML</strong>
+                </div>
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fab fa-docker"
+                    style="
+                      font-size: 32px;
+                      color: #2496ed;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">Docker</strong>
+                </div>
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fas fa-database"
+                    style="
+                      font-size: 32px;
+                      color: #47a248;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">MongoDB</strong>
+                </div>
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fas fa-vial"
+                    style="
+                      font-size: 32px;
+                      color: #ff6c37;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">Postman</strong>
+                </div>
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fas fa-code"
+                    style="
+                      font-size: 32px;
+                      color: #007acc;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">VS Code</strong>
+                </div>
+                <div
+                  class="subsection-item"
+                  style="text-align: center; padding: 12px"
+                >
+                  <i
+                    class="fas fa-desktop"
+                    style="
+                      font-size: 32px;
+                      color: #9feaf9;
+                      display: block;
+                      margin-bottom: 8px;
+                    "
+                  ></i>
+                  <strong style="font-size: 14px">Electron</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 18</span>
+          </div>
+        </div>
+
+        <!-- Slide 19: Acknowledgments -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div
+            class="tech-circle"
+            style="width: 500px; height: 500px; top: -150px; right: -150px"
+          ></div>
+          <div
+            class="tech-circle"
+            style="
+              width: 300px;
+              height: 300px;
+              bottom: -100px;
+              left: -100px;
+              border-color: rgba(59, 130, 246, 0.1);
+            "
+          ></div>
+
+          <div class="header-bar">
+            <div class="section-tag">
+              <i class="fas fa-heart"></i>
+              <span>Acknowledgments</span>
+            </div>
+            <div class="logo-text">Secure License Management System</div>
+          </div>
+
+          <div class="content-wrapper">
+            <h2>Acknowledgments</h2>
+            <div class="acknowledgment-content">
+              <p
+                class="acknowledgment-text"
+                style="font-size: 19px; line-height: 2; max-width: 1000px"
+              >
+                First and foremost, we thank Allah for granting us the strength
+                and guidance to complete this project. We extend our sincere
+                gratitude to our families and friends for their continuous
+                support and encouragement. We are deeply thankful to Dr. Assem
+                Bsoul for his supervision, valuable guidance, and constructive
+                feedback throughout the project. We also appreciate the Faculty
+                of Computer & Information Technology and the Department of
+                Cybersecurity at JUST for their academic support.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-bar">
+            <span>Department of Cybersecurity - JUST</span>
+            <span>Page 17</span>
+          </div>
+        </div>
+
+        <!-- Slide 20: Thank You / Questions -->
+        <div class="slide-container">
+          <div class="bg-grid"></div>
+          <div
+            class="tech-circle"
+            style="width: 700px; height: 700px; top: -250px; right: -250px"
+          ></div>
+          <div
+            class="tech-circle"
+            style="
+              width: 500px;
+              height: 500px;
+              bottom: -150px;
+              left: -150px;
+              border-color: rgba(59, 130, 246, 0.15);
+            "
+          ></div>
+
+          <div
+            class="main-content"
+            style="
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            "
+          >
+            <div style="max-width: 900px">
+              <div
+                class="project-tag"
+                style="margin-bottom: 50px; font-size: 18px"
+              >
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure License Management System</span>
+              </div>
+
+              <h1 style="font-size: 72px; margin-bottom: 30px">Thank You</h1>
+
               <div
                 class="divider"
-                style="width: 100px; margin: 0 auto 40px"
+                style="width: 120px; margin-bottom: 50px"
               ></div>
-            </div>
 
-            <p
-              style="
-                font-size: 20px;
-                line-height: 1.9;
-                color: #cbd5e1;
-                text-align: center;
-                max-width: 950px;
-                margin: 0 auto;
-              "
-            >
-              This section presents the overall structure of the licensing
-              system, including the operational workflow, supported licensing
-              modes, core system components, and a live demonstration of the
-              implemented solution.
-            </p>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 14</span>
-        </div>
-      </div>
-
-      <!-- Slide 15: End-to-End Workflow -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-sync-alt"></i>
-            <span>System Design</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>End-to-End Licensing Workflow</h2>
-          <div class="content-list" style="gap: 14px">
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-download"></i></div>
-              <div class="list-text">
-                User installs the application and activates it using a license
-                key or authenticated account
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-handshake"></i></div>
-              <div class="list-text">
-                Embedded License Agent securely communicates with Licensing
-                Server for verification
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-certificate"></i></div>
-              <div class="list-text">
-                After successful validation, an encrypted license is issued and
-                stored locally on the device
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-redo"></i></div>
-              <div class="list-text">
-                On each launch, agent revalidates license locally and
-                synchronizes with server when online
-              </div>
-            </div>
-            <div class="list-item">
-              <div class="list-icon"><i class="fas fa-shield-check"></i></div>
-              <div class="list-text">
-                Access is granted only when all security policies are satisfied
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 15</span>
-        </div>
-      </div>
-
-      <!-- Slide 16: Flexible Licensing Modes -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-sliders-h"></i>
-            <span>System Design</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Flexible Licensing Modes</h2>
-          <div class="content-list" style="gap: 18px">
-            <div class="list-item" style="padding: 18px 24px">
-              <div
-                class="list-icon"
-                style="width: 60px; height: 60px; font-size: 26px"
-              >
-                <i class="fas fa-globe"></i>
-              </div>
-              <div class="list-text">
-                <strong style="color: #60a5fa; font-size: 19px"
-                  >Mode 1: Online Validation</strong
-                ><br />
-                <span style="font-size: 16px; color: #cbd5e1"
-                  >Real-time license validation with centralized control,
-                  instant revocation, and activity monitoring</span
-                >
-              </div>
-            </div>
-            <div class="list-item" style="padding: 18px 24px">
-              <div
-                class="list-icon"
-                style="width: 60px; height: 60px; font-size: 26px"
-              >
-                <i class="fas fa-fingerprint"></i>
-              </div>
-              <div class="list-text">
-                <strong style="color: #34d399; font-size: 19px"
-                  >Mode 2: Device Binding</strong
-                ><br />
-                <span style="font-size: 16px; color: #cbd5e1"
-                  >License bound to unique device fingerprint, preventing
-                  copying, sharing, and unauthorized transfers with secure
-                  offline validation</span
-                >
-              </div>
-            </div>
-            <div class="list-item" style="padding: 18px 24px">
-              <div
-                class="list-icon"
-                style="width: 60px; height: 60px; font-size: 26px"
-              >
-                <i class="fas fa-network-wired"></i>
-              </div>
-              <div class="list-text">
-                <strong style="color: #fbbf24; font-size: 19px"
-                  >Mode 3: Session Control</strong
-                ><br />
-                <span style="font-size: 16px; color: #cbd5e1"
-                  >License usage through session limits, IP-based restrictions,
-                  and centralized environment management for organizations</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 16</span>
-        </div>
-      </div>
-
-      <!-- Slide 17: Core System Components -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-cubes"></i>
-            <span>System Design</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Core System Components</h2>
-          <div class="cards-grid">
-            <div class="card">
-              <div class="icon-box icon-blue">
-                <i class="fas fa-server"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Licensing Server</h3>
-                <p class="card-desc">
-                  License generation, validation, revocation, and policy
-                  enforcement
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-green">
-                <i class="fas fa-database"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Secure Database</h3>
-                <p class="card-desc">
-                  Encrypted licenses, device bindings, and activity logs
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-purple">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">Admin Dashboard</h3>
-                <p class="card-desc">
-                  Centralized license management and monitoring
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="icon-box icon-cyan">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <div class="text-content">
-                <h3 class="card-title">License Agent</h3>
-                <p class="card-desc">
-                  Enforces encryption, device ID, and access control
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 17</span>
-        </div>
-      </div>
-
-      <!-- Slide 18: System Demonstration -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div class="accent-glow" style="bottom: -100px; right: -100px"></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-play-circle"></i>
-            <span>System Design</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>System Demonstration (Mode 1)</h2>
-
-          <div
-            style="
-              background: rgba(30, 41, 59, 0.4);
-              border: 1px solid rgba(59, 130, 246, 0.2);
-              border-radius: 12px;
-              padding: 24px;
-              margin-bottom: 25px;
-            "
-          >
-            <p
-              style="
-                font-size: 17px;
-                line-height: 1.8;
-                color: #cbd5e1;
-                text-align: center;
-                margin: 0;
-              "
-            >
-              To validate the practical implementation of our system, a live
-              demonstration was conducted using
-              <strong style="color: #60a5fa"
-                >Mode 1 (Online License Validation)</strong
-              >. The demo environment includes a containerized licensing server,
-              a secure database, and a client application.
-            </p>
-          </div>
-
-          <div
-            class="subsection-title"
-            style="
-              font-size: 22px;
-              margin-bottom: 20px;
-              justify-content: center;
-            "
-          >
-            <i class="fas fa-tools"></i>
-            Technologies & Tools Used
-          </div>
-
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              gap: 16px;
-            "
-          >
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(247, 223, 30, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
+              <h2
                 style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(247, 223, 30, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
+                  font-size: 38px;
+                  color: #60a5fa;
+                  text-align: center;
+                  margin: 0;
                 "
               >
-                <i
-                  class="fas fa-code"
-                  style="font-size: 28px; color: #f7df1e"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9"
-                >JavaScript</strong
-              >
-            </div>
+                Questions?
+              </h2>
 
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(227, 79, 38, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
+              <p
                 style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(227, 79, 38, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
+                  font-size: 18px;
+                  color: #94a3b8;
+                  margin-top: 30px;
+                  font-family: &quot;Roboto Mono&quot;, monospace;
                 "
               >
-                <i
-                  class="fas fa-file-code"
-                  style="font-size: 28px; color: #e34f26"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9">HTML</strong>
+                We appreciate your time and attention
+              </p>
             </div>
-
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(36, 150, 237, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
-                style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(36, 150, 237, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
-                "
-              >
-                <i
-                  class="fas fa-cube"
-                  style="font-size: 28px; color: #2496ed"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9">Docker</strong>
-            </div>
-
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(71, 162, 72, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
-                style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(71, 162, 72, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
-                "
-              >
-                <i
-                  class="fas fa-database"
-                  style="font-size: 28px; color: #47a248"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9">MongoDB</strong>
-            </div>
-
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(255, 108, 55, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
-                style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(255, 108, 55, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
-                "
-              >
-                <i
-                  class="fas fa-vial"
-                  style="font-size: 28px; color: #ff6c37"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9">Postman</strong>
-            </div>
-
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(0, 122, 204, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
-                style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(0, 122, 204, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
-                "
-              >
-                <i
-                  class="fas fa-file-code"
-                  style="font-size: 28px; color: #007acc"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9">VS Code</strong>
-            </div>
-
-            <div
-              style="
-                background: rgba(30, 41, 59, 0.5);
-                border: 1px solid rgba(159, 234, 249, 0.3);
-                border-radius: 12px;
-                padding: 20px;
-                text-align: center;
-                transition: all 0.3s;
-              "
-            >
-              <div
-                style="
-                  width: 60px;
-                  height: 60px;
-                  background: rgba(159, 234, 249, 0.15);
-                  border-radius: 12px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0 auto 12px;
-                "
-              >
-                <i
-                  class="fas fa-desktop"
-                  style="font-size: 28px; color: #9feaf9"
-                ></i>
-              </div>
-              <strong style="font-size: 15px; color: #f1f5f9">Electron</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 18</span>
-        </div>
-      </div>
-
-      <!-- Slide 19: Acknowledgments -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div
-          class="tech-circle"
-          style="width: 500px; height: 500px; top: -150px; right: -150px"
-        ></div>
-        <div
-          class="tech-circle"
-          style="
-            width: 300px;
-            height: 300px;
-            bottom: -100px;
-            left: -100px;
-            border-color: rgba(59, 130, 246, 0.1);
-          "
-        ></div>
-
-        <div class="header-bar">
-          <div class="section-tag">
-            <i class="fas fa-heart"></i>
-            <span>Acknowledgments</span>
-          </div>
-          <div class="logo-text">Secure License Management System</div>
-        </div>
-
-        <div class="content-wrapper">
-          <h2>Acknowledgments</h2>
-          <div class="acknowledgment-content">
-            <p
-              class="acknowledgment-text"
-              style="font-size: 19px; line-height: 2; max-width: 1000px"
-            >
-              First and foremost, we thank Allah for granting us the strength
-              and guidance to complete this project. We extend our sincere
-              gratitude to our families and friends for their continuous support
-              and encouragement. We are deeply thankful to Dr. Assem Bsoul for
-              his supervision, valuable guidance, and constructive feedback
-              throughout the project. We also appreciate the Faculty of Computer
-              & Information Technology and the Department of Cybersecurity at
-              JUST for their academic support.
-            </p>
-          </div>
-        </div>
-
-        <div class="footer-bar">
-          <span>Department of Cybersecurity - JUST</span>
-          <span>Page 17</span>
-        </div>
-      </div>
-
-      <!-- Slide 20: Thank You / Questions -->
-      <div class="slide-container">
-        <div class="bg-grid"></div>
-        <div
-          class="tech-circle"
-          style="width: 700px; height: 700px; top: -250px; right: -250px"
-        ></div>
-        <div
-          class="tech-circle"
-          style="
-            width: 500px;
-            height: 500px;
-            bottom: -150px;
-            left: -150px;
-            border-color: rgba(59, 130, 246, 0.15);
-          "
-        ></div>
-
-        <div
-          class="main-content"
-          style="
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <div style="max-width: 900px">
-            <div
-              class="project-tag"
-              style="margin-bottom: 50px; font-size: 18px"
-            >
-              <i class="fas fa-shield-alt"></i>
-              <span>Secure License Management System</span>
-            </div>
-
-            <h1 style="font-size: 72px; margin-bottom: 30px">Thank You</h1>
-
-            <div
-              class="divider"
-              style="width: 120px; margin-bottom: 50px"
-            ></div>
-
-            <h2
-              style="
-                font-size: 38px;
-                color: #60a5fa;
-                text-align: center;
-                margin: 0;
-              "
-            >
-              Questions?
-            </h2>
-
-            <p
-              style="
-                font-size: 18px;
-                color: #94a3b8;
-                margin-top: 30px;
-                font-family: &quot;Roboto Mono&quot;, monospace;
-              "
-            >
-              We appreciate your time and attention
-            </p>
           </div>
         </div>
       </div>
@@ -2541,6 +2438,22 @@
 
       // Initialize
       updateSlide();
+
+      function scaleSlides() {
+        const baseWidth = 1280;
+        const baseHeight = 720;
+
+        const scaleX = window.innerWidth / baseWidth;
+        const scaleY = window.innerHeight / baseHeight;
+
+        const scale = Math.min(scaleX, scaleY);
+
+        document.querySelector(".scale-stage").style.transform =
+          `scale(${scale})`;
+      }
+
+      window.addEventListener("resize", scaleSlides);
+      scaleSlides();
     </script>
   </body>
 </html>
